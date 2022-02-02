@@ -1,0 +1,104 @@
+.Header {
+    display: flex;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.Header__Content-gradient_text {
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 75px;
+}
+
+.Header__Illustration {
+    width: 50%;
+}
+
+.Header__Illustration img {
+    width: 100%;
+}
+
+.Header__Content {
+    margin-top: 120px;
+    width: 50%;
+}
+
+.Header__Content p~p {
+    margin-top: 33px;
+    color: #81AFDD;
+}
+
+.Header__input {
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.Header__input input {
+    background-color: #052D56;
+    outline: none;
+    border: none;
+    padding: 24px;
+    flex: 1;
+    font-family: var(--font-family);
+    border-radius: 5px 0px 0px 5px;
+    display: block;
+}
+
+.Header__input .btn {
+    height: inherit;
+    min-width: 8em;
+    cursor: pointer;
+}
+
+.Header__Content-visted {
+    margin-top: 2em;
+}
+
+.Header__Content-visted img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .Header {
+        flex-direction: column;
+    }
+
+    .Header__Content {
+        width: 100%;
+    }
+
+    .Header__Content-gradient_text {
+        font-size: 3em;
+    }
+
+    .Header__Illustration {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Header {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .Header__Content {
+        margin-top: 0;
+    }
+    .Header__Content-gradient_text {
+        font-size: 2em;
+        line-height: normal;
+    }
+    .Header__input {
+        flex-direction: column;
+    }
+    .Header__input input {
+        padding: 10px;
+    }
+    .Header__input input~.btn {
+        padding: 10px;
+        width: 100%;
+    }
+}

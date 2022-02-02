@@ -1,0 +1,103 @@
+.Blog {
+    width: calc(100% - 10rem);
+    color: #fff;
+    margin:auto;
+    margin-top: 150px;
+}
+.Blog__gradient-text {
+    font-size: 60px;
+    font-weight: 800;
+    width: 50%;
+}
+.Blog__group-img {
+    margin-top: 115px;
+    display: flex;
+    height: 700px;
+    gap: 40px;
+    justify-content: space-between;
+}
+.Blog__group-img--left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.Blog__group-img--right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Blog__group-img--right_item {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+.Blog__group-img--right_item div:nth-child(2),.Blog__group-img--left div:nth-child(2){
+    background: #042C54;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.Blog__group-img--right_item div:nth-child(2) p:nth-child(2),.Blog__group-img--left div:nth-child(2) p:nth-child(2) {
+    margin-top: 20px;
+}
+.Blog__group-img--right_item div:nth-child(2) p:nth-child(3),.Blog__group-img--left div:nth-child(2) p:nth-child(3) {
+    margin-top: auto;
+}
+
+
+@media screen and (max-width:1050px) {
+    .Blog__gradient-text {
+        width: 100%;
+    }
+    .Blog {
+        width: calc(100% - 4rem);
+        margin-top: 5rem;
+        }
+        .Blog__gradient-text {
+            font-size: 2rem;
+        }
+        .Blog__group-img {
+            flex-direction: column;
+            height: auto;
+            gap:20px;
+        }
+        .Blog__group-img--left {
+            width: 100%;
+        }
+        .Blog__group-img--right {
+            width: 100%;
+        }
+        .Blog__group-img--right_item {
+            width: 100%;
+        }
+}
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 500px) {
+    .Blog {
+    width: calc(100% - 4rem);
+    margin-top: 5rem;
+    }
+    .Blog__gradient-text {
+        font-size: 2rem;
+    }
+    .Blog__group-img {
+        flex-direction: column;
+        height: auto;
+        gap:20px;
+    }
+    .Blog__group-img--left {
+        width: 100%;
+    }
+    .Blog__group-img--right {
+        width: 100%;
+    }
+    .Blog__group-img--right_item {
+        width: 100%;
+    }
+}

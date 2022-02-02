@@ -1,0 +1,14 @@
+.Brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 47px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:500px) {
+    .Brand {
+        padding: 0 2rem;
+        gap: 10px
+    }
+}

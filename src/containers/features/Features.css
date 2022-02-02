@@ -1,0 +1,115 @@
+.Features {
+    margin-top: 200px;
+    display: flex;
+    padding-left: 5em;
+    padding-right: 5em;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Features__title {
+    width: 50%;
+}
+
+.Features__content {
+    flex: 1;
+}
+
+.Features__title-gradient-text {
+    font-size: 34px;
+    font-weight: 800;
+    width: 70%;
+}
+
+.Features__title-gradient-text~p {
+    margin-top: 20px;
+    color: #FF8A71;
+}
+
+.Features__content-improve,
+.Features__content-become,
+.Features__content-message,
+.Features__content-really {
+    display: flex;
+    font-size: 24px;
+    position: relative;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.Features__content-become,
+.Features__content-message,
+.Features__content-really {
+    margin-top: 50px;
+}
+
+.Features__content-improve p:nth-child(1),
+.Features__content-become p:nth-child(1),
+.Features__content-message p:nth-child(1),
+.Features__content-really p:nth-child(1) {
+    color: #fff;
+    line-height: 24px;
+    font-weight: bolder;
+    width: 40%;
+}
+
+.Features__content-improve p:nth-child(2),
+.Features__content-become p:nth-child(2),
+.Features__content-message p:nth-child(2),
+.Features__content-really p:nth-child(2) {
+    color: #81AFDD;
+    font-size: 14px;
+    line-height: 24px;
+    width: 60%;
+}
+
+.Features__content-improve::before,
+.Features__content-become::before,
+.Features__content-message::before,
+.Features__content-really::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    background: var(--gradient-text);
+}
+
+@media screen and (max-width:1050px) {
+    .Features {
+        margin-top: 2rem;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .Features__title {
+        width: 100%;
+    }
+
+    .Features__title-gradient-text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 500px) {
+    .Features__content-improve, .Features__content-become, .Features__content-message, .Features__content-really {
+        display: flex;
+        font-size: 24px;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .Features__content-improve p:nth-child(1), .Features__content-become p:nth-child(1), .Features__content-message p:nth-child(1), .Features__content-really p:nth-child(1) {
+        width: 100%;
+    }
+
+    .Features__content-improve p:nth-child(2), .Features__content-become p:nth-child(2), .Features__content-message p:nth-child(2), .Features__content-really p:nth-child(2) {
+        width: 100%;
+    }
+}
